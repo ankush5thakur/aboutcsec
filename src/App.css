@@ -1,0 +1,67 @@
+/* Our vibrant community is dedicated to exploring the vast world of technology, coding, and innovation. We offer a welcoming space for students of all skill levels to learn, collaborate, and grow together. From hands-on workshops and coding competitions to guest lectures and hackathons, our activities are designed to inspire and challenge.
+ Whether you're interested in software development, artificial intelligence, cybersecurity, or any other tech field, you'll find like-minded peers and valuable resources here. Join us to unlock your potential, share your passion, and make lasting connections in the world of computer science. Together, we're shaping the future of technology. */
+
+ .about {
+    min-height: 100vh;
+    width: 100vw;
+    padding: 100px 50px 50px 50px;
+    background: black;
+    color: rgba(255, 255, 255, 0.8);
+
+    /* bg--img */
+     background-image: url('./../public/img.jpg'); 
+    background-size: cover; /* Cover the entire area */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    font-size: 18px; 
+  }
+  .about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(5 3 3 / 50%); /* White overlay with 50% opacity */
+    z-index: 1;
+  }
+  .content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  iframe {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  iframe:last-child {
+    padding-right: 20px;
+  }
+  
+  .videos {
+    transform: translateX(-50px);
+    display: flex;
+    overflow-x: scroll;
+    width: 100vw;
+    background-color: #990000;
+    background-image: linear-gradient(147deg, #990000 0%, #ff0000 74%);
+  }
+  
+  .videos::-webkit-scrollbar {
+    height: 10px;
+    outline: none;
+  }
+  
+  .videos::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background: white;
+  }
+  
+  @media (max-width: 500px) {
+    .videos::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  
